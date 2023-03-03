@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Teacher Protal</h3>
+            <ul>
+                <li><a href="../index.html">Signup</a></li>
+                <li><a href="../loginPage/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Teachers Dashboard</h2>
+        <p id="name">Welcone Back ${name}</p>
+        <p id="email">Email: ${email}</p>
+        <h2>Change Password</h2>
+        <form>
+            <p id="iopassword"></p>
+            <input id="oldPass" type="password" name="password" placeholder="Old Password"/>
+            <br>
+            <p id="inpassword"></p>
+            <input id="newPass" type="password" name="password" placeholder="New Password"/>
+            <br>
+            <p id="icpassword"></p>
+            <input id="conPass" type="password" name="password" placeholder="Confirm New Password"/>
+            <br>
+            <button type="button" onclick="handleChangePass()">Change</button>
+            <br>
+            <button type="button" onclick="handleLogout()">Logout</button>
+        </form>
+    </main>
+    <script src="./dashboard.js"></script>
+</body>
+</html>

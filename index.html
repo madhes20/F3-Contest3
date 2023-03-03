@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Teacher Protal</h3>
+            <ul>
+                <li><a href="./index.html">Signup</a></li>
+                <li><a href="./loginPage/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Teachers Signup</h2>
+        <form>
+            <p id="iname"></p>
+            <input id="name" type="text" name="name" placeholder="Full Name"/>
+            <br>
+            <p id="iemail"></p>
+            <input id="email" type="email" name="email" placeholder="Email"/>
+            <br>
+            <p id="ipassword"></p>
+            <input id="password" type="password" name="password" placeholder="Password" autocomplete="off"/>
+            <br>
+            <p id="icpassword"></p>
+            <input id="cpassword" type="password" name="password" placeholder="Confirm Password" autocomplete="off"/>
+            <br>
+            <button type="button" onclick="handleSignup()">Signup</button>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
